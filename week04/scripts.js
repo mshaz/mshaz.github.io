@@ -1,4 +1,4 @@
-function transformUpperCase(){
+function transformUpperCase() {
 let a = document.getElementById("namaPengguna");
 a.value = a.value.toUpperCase();
 
@@ -17,5 +17,5 @@ function checkPasswordLength() {
     }
 }
 
-let elPassword - document.getElementById("kataLaluan");
+let elPassword = document.getElementById("kataLaluan");
 elPassword.onblur = checkPasswordLength;
