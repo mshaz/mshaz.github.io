@@ -4,7 +4,7 @@ a.value = a.value.toUpperCase();
 
 }
 
-let elUsername = document.getElementById("namePengguna");
+let elUsername = document.getElementById("namaPengguna");
 elUsername.addEventListener("keyup", transformUpperCase);
 
 function checkPasswordLength() {
