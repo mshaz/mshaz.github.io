@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 - Video</title>
+    <script src="scripts/video.js"></script>
 </head>
 
 <body>
     <h1>HTML5 Video</h1>
+
+    <h2>JS Controls</h2>
+    <video id="myVideo" width="320" height="240" preload="none"
+        poster="https://dinbror.dk/blog/wp-content/uploads/2016/08/html5-video-750x400.jpg">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag
+    </video>
+    <div id="video-controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="freezeBtn">Freeze</button>
+    </div>
 
     <h2>Autoplay Muted</h2>
     <video autoplay muted>
@@ -47,6 +60,7 @@
         <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
         Your browser does not support the video tag
     </video>
+
 
 </body>
 
