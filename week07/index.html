@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue - Hello Vue!</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <div id="app2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a
+            few seconds
+            to see the title!
+        </span>
+        <a v-bind:href="linkURL" target="_blank">{{linkText}}</a>
+    </div>
+
+    <div id="app3">
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <div id="app4">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+
+    <div id="app5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">
+            Reverse the message!</button>
+    </div>
+
+    <div id="app6">
+        <p>{{message}}</p>
+        <input v-model="message">
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
