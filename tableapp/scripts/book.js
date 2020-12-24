@@ -1,5 +1,4 @@
 function BookNow(guestName, guestEmail, guestPax, guestRemarks) {
-
     let url = 'https://api.sheety.co/e4e1e3ba7d813589a03b055bfb0ae62f/bookingApp/bookings';
     let body = {
         booking: {
