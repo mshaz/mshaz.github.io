@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
 })
 
 function DeleteBooking(id) {
-    llet url = 'https://api.sheety.co/e4e1e3ba7d813589a03b055bfb0ae62f/bookingApp/bookings'; + id;
+    let url = 'https://api.sheety.co/e4e1e3ba7d813589a03b055bfb0ae62f/bookingApp/bookings/' + id;
     fetch(url, {
         method: 'DELETE',
     })
